@@ -1,9 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: "export",
   images: {
-    domains: ['jobicy.com'],
+    unoptimized: true,
+    domains: ["jobicy.com"],
   },
   reactStrictMode: true,
+  distDir: 'dist',
 };
 
 export default nextConfig;

@@ -3,7 +3,7 @@ import axios from "axios";
 const fetchJobs = async () => {
   try {
     const response = await axios.get(
-      "https://jobicy.com/api/v2/remote-jobs?count=20&geo=brazil"
+      "https://jobicy.com/api/v2/remote-jobs?count=50&geo=brazil"
     );
     return response.data;
   } catch (error) {
